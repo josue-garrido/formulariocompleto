@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script language="javascript" type="text/javascript" src="js/validacion.js" > </script>
+</head>
+<body>
+    <form action="" method="get" name="formulario2" >
+    fecha de nacimiento:
+    Dia: <input type="number"  size="2" name="dia" >
+    Mes: <input type="number" name="mes"  size="2" >
+    Año: <input type="number" name="año"  size="4" >
+    <br>
+    <div id="mostraredad"></div>
+    
+    <input type="reset" value="Borrar Datos" name="borrar" >
+    </form>
+    <button onclick="return calcularedad(formulario2)">calcular edad</button>
+</body>
+</html>

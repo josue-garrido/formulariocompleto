@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script language="javascript" type="text/javascript" src="js/validacion.js" > </script>
+</head>
+<body >
+
+    <br> <form id='valor' action="" method="get" name="formulario3" >
+        escribe el numero de personas que conforman el grupo
+        <br><br>
+        <input type='text' id='numeropersonas' name="numeropersonas">
+         <div id = "datos"></div>
+        </form>
+    
+
+<button onclick="myFunction(formulario3)">enviar</button>
+
+
+
+
+<script>
+function myFunction(formulario3){
+    var num = formulario3.numeropersonas.value;
+    var i;
+    
+    for (i=1;i<num;i++){
+        var j;
+        j <=num;
+            var texto = document.createTextNode('Hombre');
+            var texto2 = document.createTextNode('mujer');
+            var texto3 = document.createTextNode('persona '+ [i] + '      ');
+            document.getElementById('datos').appendChild(texto3);
+            var x = document.createElement("INPUT");
+            x.setAttribute("type", "radio");
+            x.setAttribute("value", "hombre");
+            x.setAttribute("name", "opcion1"+[i]);
+            document.getElementById("datos").appendChild(texto);
+            document.getElementById("datos").appendChild( x);
+            
+            var m = document.createElement("INPUT");
+            m.setAttribute("type", "radio");
+            m.setAttribute("value", "mujer");
+            m.setAttribute("name", "opcion2"+[j]);
+            document.getElementById("datos").appendChild(texto2);
+            document.getElementById("datos").appendChild( m);
+
+
+            var br = document.createElement("br");
+            var br2 = document.createElement("br");
+            document.getElementById("datos").appendChild( br);
+            document.getElementById("datos").appendChild( br2);
+            
+    } 
+    j++;
+}
+</script>
+
+    
+   
+</body>
+</html>
