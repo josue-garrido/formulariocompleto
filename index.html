@@ -3,9 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ejemplo git</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
-     
+    <p> se le encarga  realizar un formulario para el calculo de interes 
+        de un prestamo bancarion ingresando el monto y los meses a invertir,
+        conociendo que es un 2% de intereses anuales. </p>
+    <script src="js/validar.js"></script>
+    <form action="" method="POST" name="formulario">
+        <br>
+        <table align="center" border="1">
+            <td align="left" width="100">
+                introduce la cantidad a invertir: $
+            </td>
+            <td align="center" width="150">
+                <input type="text" id="cantidad" name="cantidad"  onkeypress="return validarlongitud(this,10)" onkeypress=" return validar(event)">
+            </td>
+            <tr>
+                <td></td>
+                <td align="center" width="150">
+                    <input type="button" value="calcule interes" name="enviar" onclick="interes()"> 
+                </td>
+            </tr>
+            <tr>
+                <td align="left" width="100">
+                    su saldo total con intereses de 2% es de:
+                </td>
+                <td align="left" width=" 150">
+                    <input type="text" name="sueldoti" id="cantidadi" readonly="readonly"
+                    class="input_text">
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td > 
+                    <input type="button" name="borrar" value="borrar" onclick="">
+                </td>
+            </tr>
+        </table>
+    </form>
+    <br>
+    
 </body>
 </html>
